@@ -1,0 +1,84 @@
+<!--14.	Create a webpage that displays your favourite 
+    quotations in a web page just above images. 
+    You have to use border, height, width, margin, 
+    padding, outline properties of CSS. Also use
+     text and font properties to add effects in text to display quotations.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    div{
+        height:200PX;
+        WIDTH:200PX;
+        background-color: maroon;
+        color: WHITE;
+        font-size: 40PX;
+        font-weight: 700;
+        MARGIN:10PX;
+    }
+    .container{
+        display:flex;
+        height:auto;
+        WIDTH:auto;
+        background-color: olive;
+        color: WHITE;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    .container div{
+        display:flex;
+        height:auto;
+        width:auto;
+        justify-content: center;
+        align-content: space-evenly;
+        align-items: center;
+        border:antiquewhite 10px double;
+    }
+    .d1{
+        position: relative;
+        align-content: space-evenly;
+        align-items: center;
+    }
+    .d1 img{
+        height:100%;
+        WIDTH:100%;
+        position:absolute;
+        z-index:9;
+    }
+    
+    .d2
+    {
+        transform: rotate(45);
+    }
+   </style>
+    <title>Document</title>
+</head>
+<body bgcolor="olive">
+    <DIV class="container">
+
+    <div class="d1">
+        <img src="images/10.jpeg">
+        <span style="z-index:9 ;">Be positive</span>
+        </div>
+
+        <div class="d1">
+            <img src="images/1.jpeg">
+            <span style="z-index:9 ;">be happy</span>
+            </div>
+            
+            <div class="d1">
+                <img src="images/9.jpeg">
+                <span style="z-index:9 ;">spread love</span>
+                </div>
+                
+                <div class="d1">
+                    <img src="images/8.jpeg">
+                    <span style="z-index:9 ;">eat good</span>
+                    </div>
+</DIV>
+    
+</body>
+</html>

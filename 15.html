@@ -1,0 +1,73 @@
+<!--
+    Make a layout template that contains a header and two paragraphs. 
+    Use float to line up the two paragraphs as columns side by side. 
+    Give the header and two paragraphs a border and/or a background color so you can see where they are.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Template</title>
+<style>
+    /* Global styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    /* Header styles */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    /* Container styles */
+    .container {
+        border: 2px solid #333;
+        overflow: hidden; /* Clear floats */
+    }
+    /* Paragraph styles */
+    .column {
+        float: left;
+        width: 50%; /* Two columns */
+        padding: 20px;
+        box-sizing: border-box; /* Include padding in width */
+    }
+    /* Clearfix for container */
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Styling for first paragraph */
+    .first-paragraph {
+        background-color: #f2f2f2;
+    }
+    /* Styling for second paragraph */
+    .second-paragraph {
+        background-color: #b18b8b;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Header</h1>
+</header>
+
+<div class="container clearfix">
+    <div class="column first-paragraph">
+        <h2>First Paragraph</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Mauris ut mauris non magna varius tincidunt.</p>
+    </div>
+    <div class="column second-paragraph">
+        <h2>Second Paragraph</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+</div>
+
+</body>
+</html>

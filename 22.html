@@ -1,0 +1,52 @@
+<!--
+    Write a JavaScript to display greeting message according 
+    to time with user name that is accessing the webpage. When user clicks on the greeting message it should hide.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greeting Message</title>
+<style>
+    #greeting {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 50px;
+        cursor: pointer; /* Change cursor to pointer on hover */
+    }
+</style>
+</head>
+<body>
+
+<div id="greeting"></div>
+
+<script>
+function displayGreeting() {
+    var now = new Date();
+    var hours = now.getHours();
+    var userName = 'Devaanshi'; // Set the name as "Chhavi"
+
+    var greetingMessage;
+
+    if (hours < 12) {
+        greetingMessage = "Good morning, " + userName + "! Have a wonderful day ahead!";
+    } else if (hours < 18) {
+        greetingMessage = "Good afternoon, " + userName + "! Hope you're having a lovely day!";
+    } else {
+        greetingMessage = "Good evening, " + userName + "! Wishing you a relaxing evening!";
+    }
+
+    document.getElementById('greeting').textContent = greetingMessage;
+}
+
+displayGreeting(); // Call the function when the page loads
+
+document.getElementById('greeting').addEventListener('click', function() {
+    this.style.display = 'none'; // Hide the greeting message when clicked
+});
+</script>
+
+</body>
+</html>

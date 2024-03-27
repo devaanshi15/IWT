@@ -1,0 +1,57 @@
+<!--16.Build a simple horizontal navigation bar using an unordered list and Internal CSS.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    nav{
+        margin:0;
+        padding:0;
+        position: fixed;
+    }
+    nav ul{
+        border:1px solid black;
+        margin:0;
+        list-style-type: none;
+        padding: 0;
+        bottom:0;
+    }
+    nav ul li{
+        border:1px solid black;
+        margin-right: 3px;
+        padding:10px;
+        font-size: 30px;                  
+        float:right;
+        width:100px;
+        text-align: center;
+    }
+    nav ul li:hover a{
+        color:chartreuse;
+        transition:1s;
+        text-transform: uppercase;
+    }
+    nav ul li a{
+       text-decoration: none;
+       display:block;
+        background-color: black;
+       color:aqua;
+    }
+    nav ul li:last-child{
+      border:none;
+    }
+   </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+    <ul>
+         <li> <a href="#">home</a></li>
+         <li> <a href="#">services</a></li>
+         <li> <a href="#">about-us</a></li>
+         <li> <a href="#">Contact us</a></li>
+
+
+    </ul>
+    </nav>
+</body>
+</html>

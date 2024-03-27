@@ -1,0 +1,100 @@
+<!--
+    Create a Home Page for Banasthali's Website look like following website. https://gsas.harvard.edu/
+
+Menu should be
+About Us | Academics | Research | Campus & Facilities | School Education | Admissions
+
+And top bar should be
+News & Events International | Careers | Placements Alumni | Contact Us | Login Hub
+
+You should use your own color scheme and background only the layout should be followed.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Website</title>
+<style>
+    /* Header */
+    header {
+        background-color: #333; /* Dark background color */
+        color: #fff; /* Text color */
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Navigation Menu */
+    nav {
+        background-color: #f0f0f0; /* Light background color */
+        padding: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333; /* Link color */
+        padding: 5px 10px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+        background-color: #666; /* Darker background color */
+        color: #fff; /* Text color */
+        padding: 5px;
+        text-align: center;
+    }
+
+    .top-bar a {
+        text-decoration: none;
+        color: #fff; /* Link color */
+        padding: 5px 10px;
+    }
+    body {
+        background-image: url('bv.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Banasthali Vidyapith</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Campus & Facilities</a></li>
+        <li><a href="#">School Education</a></li>
+        <li><a href="#">Admissions</a></li>
+    </ul>
+</nav>
+
+<div class="top-bar">
+    <a href="#">News & Events International</a> |
+    <a href="#">Careers</a> |
+    <a href="#">Placements Alumni</a> |
+    <a href="#">Contact Us</a> |
+    <a href="#">Login Hub</a>
+</div>
+
+</body>
+</html>

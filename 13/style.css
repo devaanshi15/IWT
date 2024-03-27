@@ -1,0 +1,36 @@
+/* a. Put a background color and image with gradient overlay. */
+body {
+    background-color: #f0f0f0; /* Background color */
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url('20.jpeg'); /* Gradient overlay */
+    background-size: cover; /* Ensure background image covers the entire viewport */
+}
+
+/* b. Make h1 heading 30px, bolder, use color according to your background. */
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333; /* Color according to background */
+}
+
+/* c. Paragraphs should have font size 15px and choose color according to background. */
+p {
+    font-size: 15px;
+    color: #555; /* Color according to background */
+    line-height: 1.5; /* Increase line spacing */
+}
+
+/* d. Increase line spacing in paragraph text. */
+p {
+    line-height: 1.5;
+}
+
+/* e. Highlight important words and use styling for that. */
+strong {
+    color: #ff0000; /* Red color for highlighting */
+}
+
+/* f. Make h2 heading 20px and choose color according to background. */
+h2 {
+    font-size: 20px;
+    color: #333; /* Color according to background */
+}

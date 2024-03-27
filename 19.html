@@ -1,0 +1,51 @@
+<!--
+    Implement a Javascript function that accept number of rows(m) and columns(n) 
+    from user and displays a 2D mx n square layout of alternate colors black and red.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2D Table with Alternate Colors</title>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    td {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+
+<script>
+function createTable(rows, columns) {
+    var table = document.createElement('table');
+
+    for (var i = 0; i < rows; i++) {
+        var row = table.insertRow();
+        for (var j = 0; j < columns; j++) {
+            var cell = row.insertCell();
+            // Alternate between black and red colors
+            if ((i + j) % 2 === 0) {
+                cell.style.backgroundColor = 'black';
+            } else {
+                cell.style.backgroundColor = 'red';
+            }
+        }
+    }
+
+    document.body.appendChild(table);
+}
+
+var rows = parseInt(prompt('Enter the number of rows:'));
+var columns = parseInt(prompt('Enter the number of columns:'));
+createTable(rows, columns);
+</script>
+
+</body>
+</html>

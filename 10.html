@@ -1,0 +1,70 @@
+<!--
+    Modify the webpage created in Exercise-3 using HTML form.
+    Use radio buttons for options, so user can choose only one
+    among 4 options. Also add a submit button for quiz submission.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 10</title>
+</head>
+<body>
+    <form action="submit_quiz.html" method="post">
+        <p align="center"><h1>QUIZ</h1></p>
+
+        <ol>
+            <li><u>Question 1: Hello there</u></li>
+            
+                <input type="radio" name="q1" value="option1"> Option 1<br>
+                <input type="radio" name="q1" value="option2"> Option 2<br>
+                <input type="radio" name="q1" value="option3"> Option 3<br>
+                <input type="radio" name="q1" value="option4"> Option 4<br>
+            
+
+            <li>Question 2</li>
+            
+                <input type="radio" name="q2" value="option1"> Option 1<br>
+                <input type="radio" name="q2" value="option2"> Option 2<br>
+                <input type="radio" name="q2" value="option3"> Option 3<br>
+                <input type="radio" name="q2" value="option4"> Option 4<br>
+            
+
+            <li>Question 3: Superscript--> x<sup>2</sup> Subscript--> x<sub>4</sub></li>
+            
+                <input type="radio" name="q3" value="option1"> Option 1<br>
+                <input type="radio" name="q3" value="option2"> Option 2<br>
+                <input type="radio" name="q3" value="option3"> Option 3<br>
+                <input type="radio" name="q3" value="option4"> Option 4<br>
+            
+
+            <li>Question 4</li>
+            
+                <input type="radio" name="q4" value="option1"> Option 1<br>
+                <input type="radio" name="q4" value="option2"> Option 2<br>
+                <input type="radio" name="q4" value="option3"> Option 3<br>
+                <input type="radio" name="q4" value="option4"> Option 4<br>
+            
+
+            <li><pre> What is the output of this?
+                    int a;
+                    cout << "Enter the value of a" << endl;
+                    cin >> a;
+                    if(a > 50)
+                        cout << "Number is greater than 50" << endl << a;
+                    else
+                        cout << "Number is less than 50" << endl << a;
+                </pre></li>
+                
+                    <input type="radio" name="q5" value="option1"> Number is less than 50, 47<br>
+                    <input type="radio" name="q5" value="option2"> Number is greater than 50, 11345<br>
+                    <input type="radio" name="q5" value="option3"> Number is less than 50, 45<br>
+                    <input type="radio" name="q5" value="option4"> Number is greater than 50, 7167<br>
+                
+            
+        </ol>
+
+        <input type="submit" value="Submit Quiz" height="30" width="30" center>
+    </form>
+</body>
+</html>

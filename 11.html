@@ -1,0 +1,65 @@
+<!--Create a user feedback page which asks questions about a software product. 
+    You are required to use checkbox, radio buttons, and drop-down, 
+    textarea and various text input type for this. Structure the web page using HTML table.
+.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback</title>
+    
+</head>
+<body>
+    <h1>User Feedback</h1>
+    <form action="submit_feedback.html" method="post">
+        <table border="5" width="100%" height="70%" cellspacing="0" cellpadding="40">
+            <tr>
+                <th>Question</th>
+                <th>Response</th>
+            </tr>
+            <tr>
+                <td>1. What is your overall satisfaction with the software?</td>
+                <td>
+                    <input type="radio" name="satisfaction" value="verySatisfied"> Very Satisfied
+                    <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+                    <input type="radio" name="satisfaction" value="neutral"> Neutral
+                    <input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied
+                    <input type="radio" name="satisfaction" value="veryDissatisfied"> Very Dissatisfied
+                </td>
+            </tr>
+            <tr>
+                <td>2. What features do you use most frequently? (Select all that apply)</td>
+                <td>
+                    <input type="checkbox" name="features[]" value="feature1"> Feature 1
+                    <input type="checkbox" name="features[]" value="feature2"> Feature 2
+                    <input type="checkbox" name="features[]" value="feature3"> Feature 3
+                </td>
+            </tr>
+            <tr>
+                <td>3. How would you rate the user interface?</td>
+                <td>
+                    <select name="uiRating">
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>4. Any additional comments or suggestions:</td>
+                <td>
+                    <textarea name="comments" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit Feedback">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!--
+    Create a user registration form which accepts first name, last name (not mandatory), 
+    user ID (Banasthali ID), password, confirm password, Address, Email ID, Contact number.
+    Apply appropriate client side validations using JavaScript for all fields of html form. Also layout this form using a CSS.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration Form</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName"><br>
+
+            <label for="userID">User ID (Banasthali ID):</label>
+            <input type="text" id="userID" name="userID" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" name="contactNumber" required><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

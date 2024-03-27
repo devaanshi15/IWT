@@ -1,0 +1,34 @@
+/* Apply background color and image with gradient overlay */
+body {
+    background-color: #f0f0f0; /* Choose your background color */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg'); /* Choose your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Default text color for better contrast */
+}
+
+/* Style for h1 heading */
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff; /* Choose a color that contrasts well with your background */
+}
+
+/* Style for paragraphs */
+p {
+    font-size: 15px;
+    color: #fff; /* Choose a color that contrasts well with your background */
+    line-height: 1.5; /* Increase line spacing */
+}
+
+/* Styling for highlighted words */
+.highlight {
+    background-color: yellow; /* Choose your highlight color */
+    font-weight: bold;
+}
+
+/* Style for h2 heading */
+h2 {
+    font-size: 20px;
+    color: #fff; /* Choose a color that contrasts well with your background */
+}
